@@ -1,0 +1,39 @@
+GET http://localhost:3000/me
+
+###
+GET http://localhost:3000/heroes
+
+###
+POST http://localhost:3000/heroes
+Content-Type: application/json
+
+{
+	"id": "69",
+	"name": "Batman",
+	"powerstats": {
+		"intelligence": "81",
+		"strength": "40",
+		"speed": "29",
+		"durability": "55",
+		"power": "63",
+		"combat": "90"
+	},
+	"biography": {
+		"full-name": "Terry McGinnis",
+		"alter-egos": "No alter egos found.",
+		"aliases": ["The Tomorrow Knight"],
+		"place-of-birth": "Gotham City, 25th Century",
+		"first-appearance": "Batman Beyond #1",
+		"publisher": "DC Comics",
+		"alignment": "good"
+	}
+}
+
+###
+GET http://localhost:3000/heroes/60e470b58c4e6738881933b1
+
+###
+GET http://localhost:3000/heroes/bio/60e470b58c4e6738881933b1
+
+###
+DELETE http://localhost:3000/heroes/60e470b58c4e6738881933b1
