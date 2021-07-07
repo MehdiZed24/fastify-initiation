@@ -37,3 +37,13 @@ GET http://localhost:3000/heroes/bio/60e470b58c4e6738881933b1
 
 ###
 DELETE http://localhost:3000/heroes/60e470b58c4e6738881933b1
+
+###
+PATCH http://localhost:3000/heroes/60e5a25e564df64abfed649b
+Content-Type: application/json
+
+{
+  "biography":{
+    "full-name": "Bruce Wayne"
+  }
+}
