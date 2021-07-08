@@ -47,3 +47,31 @@ Content-Type: application/json
     "full-name": "Bruce Wayne"
   }
 }
+
+###
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email":"email@email.com",
+    "password":"password",
+    "role":"user"
+  
+}
+
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/60e5b42c1e2c25510be54c17
+
+###
+PATCH http://localhost:3000/users/60e5c001f065a7564372778c
+Content-Type: application/json
+
+{
+  "email":"jeanjean@gmail.com"
+}
