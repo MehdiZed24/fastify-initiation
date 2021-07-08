@@ -75,3 +75,20 @@ Content-Type: application/json
 {
   "email":"jeanjean@gmail.com"
 }
+
+
+###
+DELETE http://localhost:3000/users/60e5c001f065a7564372778c
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email":"email@email.com",
+  "password": "password"
+}
+
+###
+GET http://localhost:3000/protected
+Authorization: Bearer argon2i$v=19$m=4096,t=3,p=1$PQpFAWLEnjt5N9CW+d49WQ$suGnwVIpfvl0cENXwzTxwjvIhY6VwsxiEPRqOBaGsWU
